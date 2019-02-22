@@ -1,10 +1,91 @@
+Venue: U.S. Bank Arena
+
+Location: CincinnatiOH
+
+Time: 02/27/2019
+---------------------------------------------------------------------------------------------------------------
+
+Please enter a different artist or band
+
+TypeError: Cannot read property 'split' of undefined
+---------------------------------------------------------------------------------------------------------------
+
+Please enter a different artist or band
+
+TypeError: Cannot read property 'split' of undefined
+---------------------------------------------------------------------------------------------------------------
+
 Please enter an artist or band for concert-this
 ---------------------------------------------------------------------------------------------------------------
 
-Venue: Target Center
+Artist: Taylor Swift
+Song Title: 
+Blank Space
+Preview Link: 
 
-Location: MinneapolisMN
+Album Title: 
+1989
+---------------------------------------------------------------------------------------------------------------
 
-Time: 02/21/2019
+Please enter a different song
+
+TypeError: Cannot read property 'artists' of undefined
+---------------------------------------------------------------------------------------------------------------
+
+Artist: Ace of Base
+Song Title: 
+The Sign
+Preview Link: 
+https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=151ad295ba444826b458d036de6eecd5
+Album Title: 
+The Sign (US Album) [Remastered]
+---------------------------------------------------------------------------------------------------------------
+
+Artist: Taylor Swift
+Song Title: Blank Space
+Preview Link: null
+Album Title: 1989
+---------------------------------------------------------------------------------------------------------------
+
+Please enter a different song
+
+TypeError: Cannot read property 'artists' of undefined
+---------------------------------------------------------------------------------------------------------------
+
+Artist: Ace of Base
+Song Title: The Sign
+Preview Link: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=151ad295ba444826b458d036de6eecd5
+Album Title: The Sign (US Album) [Remastered]
+---------------------------------------------------------------------------------------------------------------
+
+Title: Trolls
+Year: 2016
+IMDB Rating: 6.5/10
+Rotten Tomato Rating: 75%
+Country: USA
+Language: English
+Plot: After the Bergens invade Troll Village, Poppy, the happiest Troll ever born, and the curmudgeonly Branch set off on a journey to rescue her friends.
+Actors: Anna Kendrick, Justin Timberlake, Zooey Deschanel, Christopher Mintz-Plasse
+---------------------------------------------------------------------------------------------------------------
+
+Please enter a different movie
+
+TypeError: Cannot read property '0' of undefined
+---------------------------------------------------------------------------------------------------------------
+
+Title: Mr. Nobody
+Year: 2009
+IMDB Rating: 7.8/10
+Rotten Tomato Rating: 67%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+---------------------------------------------------------------------------------------------------------------
+
+Artist: Backstreet Boys
+Song Title: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=151ad295ba444826b458d036de6eecd5
+Album Title: The Hits--Chapter One
 ---------------------------------------------------------------------------------------------------------------
 

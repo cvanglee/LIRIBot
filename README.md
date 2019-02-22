@@ -1,132 +1,140 @@
 # LIRIBot
-> Additional information or tagline
-
-A brief description of your project, what it is used for and how does life get
-awesome when someone starts to use it.
+This application will take in arguments of a command term and search term and the different commands will either display to the screen concert, song, or movie information.
 
 ## Installing / Getting started
 
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
-
-```shell
-packagemanager install awesome-project
-awesome-project start
-awesome-project "Do something!"  # prints "Nah."
-```
-
-Here you should say what actually happens when you execute the code above.
+In order to run this application, you will have to clone the github repository listed under links.
 
 ### Initial Configuration
 
-Some projects require initial configuration (e.g. access tokens or keys, `npm i`).
-This is the section where you would document those requirements.
+Before starting development of this application, a Spotify API key needs to be obtained and installation of axios, dotenv, moment, and node-spotify-api npm packages is needee.  The api keys for IMDB and Bandsintown is also needed, but the bootcamp provided keys for these. 
 
-## Developing
 
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
+## Running the tests
 
-```shell
-git clone https://github.com/your/awesome-project.git
-cd awesome-project/
-packagemanager install
-```
+This application will take in arguments, of which the first argument after the file needs to be one of the following commands:
 
-And state what happens step-by-step.
+*concert-this
+*spotify-this-song
+*movie-this
+*do-what-it-says
 
-### Building
+The following arguments would be an artist or band for concert-this, song title for spotify-this-song, movie title for movie-this, and nothing for do-what-it-says.
 
-If your project needs some additional steps for the developer to build the
-project after some code changes, state them here:
+These arguments will display venue, venue location, and date if concert-this is specified in the command argument.  The screen will display artist, song title, link to a preview of the song, and album if spotify-this-song is specified. For movie-this, the screen will display movie title, release year, IMDB rating, Rotten Tomatoes rating, language of movie, plot of the movie, and actors in the movie.  The do-what-it-says command will pull text from a file, random.txt, and execute what is stored on the file.  In addition, the screen outputs will be logged to a log.txt file and stored in the Liribot directory.
 
-```shell
-./configure
-make
-make install
-```
-
-Here again you should state what actually happens when the code above gets
-executed.
-
-### Deploying / Publishing
-
-In case there's some step you have to take that publishes this project to a
-server, this is the right time to state it.
-
-```shell
-packagemanager deploy awesome-project -s server.com -u username -p password
-```
-
-And again you'd need to tell what the previous code actually does.
-
-## Features
-
-What's all the bells and whistles this project can perform?
-* What's the main functionality
-* You can also do another thing
-* If you get really randy, you can even do this
-
-## Configuration
-
-Here you should write what are all of the configurations a user can enter when
-using the project.
-
-#### Argument 1
+#### Argument 1 - Command
 Type: `String`  
-Default: `'default value'`
+Default: `" "`
 
-State what an argument does and how you can use it. If needed, you can provide
-an example below.
+It needs to match one of the following:
 
-Example:
-```bash
-awesome-project "Some other value"  # Prints "You're nailing this readme!"
-```
+*concert-this
+*spotify-this-song
+*movie-this
+*do-what-it-says
 
-#### Argument 2
-Type: `Number|Boolean`  
-Default: 100
+If it is not the text listed, then it will do nothing.
 
-Copy-paste as many of these as you need.
+#### Argument 2 - search term
+Type: `string`  
+Default: `" "`
 
-## Contributing
+*concert-this - needs artist or band as search term
+*spotify-this-song - needs song title as search term
+*movie-this - needs movie title as search term
+*do-what-it-says - no search term needed
 
-When you publish something open source, one of the greatest motivations is that
-anyone can just jump in and start contributing to your project.
+## Test scenario 1
 
-These paragraphs are meant to welcome those kind souls to feel that they are
-needed. You should state something like:
+command = concert-this
+search term = elton john
 
-"If you'd like to contribute, please fork the repository and use a feature
-branch. Pull requests are warmly welcome."
+Typed into command line --> "node liri.js concert-this elton john"
 
-If there's anything else the developer needs to know (e.g. the code style
-guide), you should link it here. If there's a lot of things to take into
-consideration, it is common to separate this section to its own file called
-`CONTRIBUTING.md` (or similar). If so, you should say that it exists here.
+![Image of scenario 1](./images/Scenario1.png)
+
+## Test scenario 2
+
+command = concert-this
+search term = gjafo
+
+Typed into command line --> "node liri.js concert-this gjafo"
+
+![Image of scenario 1](./images/Scenario2.png)
+
+## Test scenario 3
+
+command = concert-this
+search term = "blank"
+
+Typed into command line --> "node liri.js concert-this"
+
+![Image of scenario 1](./images/Scenario3.png)
+
+## Test scenario 4
+
+command = spotify-this-song
+search term = blank space
+
+Typed into command line --> "node liri.js spotify-this-song blank space"
+
+![Image of scenario 1](./images/Scenario4.png)
+
+## Test scenario 5
+
+command = spotify-this-song
+search term = afzsfv
+
+Typed into command line --> "node liri.js spotify-this-song afzsfv"
+
+![Image of scenario 1](./images/Scenario5.png)
+
+## Test scenario 6
+
+command = spotify-this-song
+search term = "blank"
+
+Typed into command line --> "node liri.js spotify-this-song"
+
+![Image of scenario 1](./images/Scenario6.png)
+
+## Test scenario 7
+
+command = movie-this
+search term = trolls
+
+Typed into command line --> "node liri.js movie-this trolls"
+
+![Image of scenario 1](./images/Scenario7.png)
+
+## Test scenario 8
+
+command = movie-this
+search term = arufhd
+
+Typed into command line --> "node liri.js movie-this arufhd"
+
+![Image of scenario 1](./images/Scenario8.png)
+
+## Test scenario 9
+
+command = movie-this
+search term = "blank"
+
+Typed into command line --> "node liri.js movie-this"
+
+![Image of scenario 1](./images/Scenario9.png)
+
+## Test scenario 10
+
+command = do-what-it-says
+search term = "blank"
+
+Typed into command line --> "node liri.js do-what-it-says"
+
+![Image of scenario 1](./images/Scenario10.png)
 
 ## Links
 
-Even though this information can be found inside the project on machine-readable
-format like in a .json file, it's good to include a summary of most useful
-links to humans using your project. You can include links like:
-
-- Project homepage: https://your.github.com/awesome-project/
-- Repository: https://github.com/your/awesome-project/
-- Issue tracker: https://github.com/your/awesome-project/issues
-  - In case of sensitive bugs like security vulnerabilities, please contact
-    my@email.com directly instead of using issue tracker. We value your effort
-    to improve the security and privacy of this project!
-- Related projects:
-  - Your other project: https://github.com/your/other-project/
-  - Someone else's project: https://github.com/someones/awesome-project/
-
-
-## Licensing
-
-One really important part: Give your project a proper license. Here you should
-state what the license is and how to find the text version of the license.
-Something like:
-
-"The code in this project is licensed under MIT license."
+- Repository: https://github.com/cvanglee/LIRIBot

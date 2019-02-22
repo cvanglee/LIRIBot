@@ -36,7 +36,7 @@ switch (command){
     case "concert-this":
         if (name!==""){
         axios
-            .get("https://rest.bandsintown.com/artists/" + name + "/events?app_id=codingbootcamp")
+            .get("https://rest.bandsintown.com/artists/" + name + "/events?app_id="+process.env.BANDS_IN_TOWN_API)
             .then (function(response){
 
                 date = response.data[0].datetime;
@@ -53,6 +53,13 @@ switch (command){
                   });
                 console.log(log);
             })
+            .catch(function (error) {
+                log = ["Please enter a different artist or band\n", error].join("\n");
+                fs.appendFile("log.txt", log + divider, function(err) {
+                    if (err) throw err;
+                  });
+                console.log(log);
+              });
         }
         else {
             log = "Please enter an artist or band for concert-this";
@@ -73,18 +80,22 @@ switch (command){
                 var songInfo = response.tracks.items[0];
                 log = [
                 "Artist: "+songInfo.artists[0].name,
-                "Song Title: ",songInfo.name,
-                "Preview Link: ",songInfo.preview_url,
-                "Album Title: ",songInfo.album.name,
+                "Song Title: "+songInfo.name,
+                "Preview Link: "+songInfo.preview_url,
+                "Album Title: "+songInfo.album.name,
                 ].join("\n");
                 fs.appendFile("log.txt", log + divider, function(err) {
                     if (err) throw err;
                   });
                 console.log(log);
             })
-            .catch(function(err) {
-                console.log(err);
-            })
+            .catch(function(error) {
+                log = ["Please enter a different song\n", error].join("\n");
+                fs.appendFile("log.txt", log + divider, function(err) {
+                    if (err) throw err;
+                  });
+                console.log(log);
+              });
         break;
     
     case "movie-this":
@@ -92,7 +103,7 @@ switch (command){
             name="mr nobody"
     }
         axios
-            .get("http://www.omdbapi.com/?t=" + name + "&y=&plot=short&apikey=trilogy")
+            .get("http://www.omdbapi.com/?t=" + name + "&y=&plot=short&apikey="+process.env.IMDB_API)
             .then (function(response){
                 log =[
                     "Title: " + response.data.Title,
@@ -109,6 +120,13 @@ switch (command){
                   });
                 console.log(log);
             })
+            .catch(function (error) {
+                log = ["Please enter a different movie\n", error].join("\n");
+                fs.appendFile("log.txt", log + divider, function(err) {
+                    if (err) throw err;
+                  });
+                console.log(log);
+              });
         break;
     
     case "do-what-it-says":
