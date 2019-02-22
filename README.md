@@ -52,7 +52,7 @@ search term = elton john
 
 Typed into command line --> "node liri.js concert-this elton john"
 
-![Image of scenario 1](/images/Scenario1.png)
+![Image of scenario 1](https://github.com/cvanglee/LIRIBot/images/Scenario1.png)
 
 ## Test scenario 2
 
