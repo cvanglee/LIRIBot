@@ -52,7 +52,7 @@ search term = elton john
 
 Typed into command line --> "node liri.js concert-this elton john"
 
-![Image of scenario 1](./images/Scenario1.png)
+![Image of scenario 1](/images/Scenario1.png)
 
 ## Test scenario 2
 
@@ -61,7 +61,7 @@ search term = gjafo
 
 Typed into command line --> "node liri.js concert-this gjafo"
 
-![Image of scenario 1](./images/Scenario2.png)
+![Image of scenario 1](/images/Scenario2.png)
 
 ## Test scenario 3
 
@@ -70,7 +70,7 @@ search term = "blank"
 
 Typed into command line --> "node liri.js concert-this"
 
-![Image of scenario 1](./images/Scenario3.png)
+![Image of scenario 1](/images/Scenario3.png)
 
 ## Test scenario 4
 
@@ -79,7 +79,7 @@ search term = blank space
 
 Typed into command line --> "node liri.js spotify-this-song blank space"
 
-![Image of scenario 1](./images/Scenario4.png)
+![Image of scenario 1](/images/Scenario4.png)
 
 ## Test scenario 5
 
@@ -88,7 +88,7 @@ search term = afzsfv
 
 Typed into command line --> "node liri.js spotify-this-song afzsfv"
 
-![Image of scenario 1](./images/Scenario5.png)
+![Image of scenario 1](/images/Scenario5.png)
 
 ## Test scenario 6
 
@@ -97,7 +97,7 @@ search term = "blank"
 
 Typed into command line --> "node liri.js spotify-this-song"
 
-![Image of scenario 1](./images/Scenario6.png)
+![Image of scenario 1](/images/Scenario6.png)
 
 ## Test scenario 7
 
@@ -106,7 +106,7 @@ search term = trolls
 
 Typed into command line --> "node liri.js movie-this trolls"
 
-![Image of scenario 1](./images/Scenario7.png)
+![Image of scenario 1](/images/Scenario7.png)
 
 ## Test scenario 8
 
@@ -115,7 +115,7 @@ search term = arufhd
 
 Typed into command line --> "node liri.js movie-this arufhd"
 
-![Image of scenario 1](./images/Scenario8.png)
+![Image of scenario 1](/images/Scenario8.png)
 
 ## Test scenario 9
 
@@ -124,7 +124,7 @@ search term = "blank"
 
 Typed into command line --> "node liri.js movie-this"
 
-![Image of scenario 1](./images/Scenario9.png)
+![Image of scenario 1](/images/Scenario9.png)
 
 ## Test scenario 10
 
@@ -133,7 +133,7 @@ search term = "blank"
 
 Typed into command line --> "node liri.js do-what-it-says"
 
-![Image of scenario 1](./images/Scenario10.png)
+![Image of scenario 1](/images/Scenario10.png)
 
 ## Links
 
