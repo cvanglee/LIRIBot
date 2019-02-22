@@ -19,29 +19,6 @@ Please enter an artist or band for concert-this
 ---------------------------------------------------------------------------------------------------------------
 
 Artist: Taylor Swift
-Song Title: 
-Blank Space
-Preview Link: 
-
-Album Title: 
-1989
----------------------------------------------------------------------------------------------------------------
-
-Please enter a different song
-
-TypeError: Cannot read property 'artists' of undefined
----------------------------------------------------------------------------------------------------------------
-
-Artist: Ace of Base
-Song Title: 
-The Sign
-Preview Link: 
-https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=151ad295ba444826b458d036de6eecd5
-Album Title: 
-The Sign (US Album) [Remastered]
----------------------------------------------------------------------------------------------------------------
-
-Artist: Taylor Swift
 Song Title: Blank Space
 Preview Link: null
 Album Title: 1989
@@ -88,4 +65,3 @@ Song Title: I Want It That Way
 Preview Link: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=151ad295ba444826b458d036de6eecd5
 Album Title: The Hits--Chapter One
 ---------------------------------------------------------------------------------------------------------------
-

@@ -14,22 +14,8 @@ let cDate = "";
 var log = [];
 var divider =
     "\n---------------------------------------------------------------------------------------------------------------\n\n";
-// process.stdout.pipe(log);
-for (let i = 3; i < argAll.length; i++) {
-
-    if (i > 3 && i < argAll.length) {
   
-      name = name + "+" + argAll[i];
-  
-    }
-  
-    else {
-  
-      name += argAll[i];
-  
-    }
-  }
-  
+name = process.argv.slice(3).join(" ");
 
 liri = function(command, name){
 switch (command){

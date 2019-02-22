@@ -14,10 +14,10 @@ Before starting development of this application, a Spotify API key needs to be o
 
 This application will take in arguments, of which the first argument after the file needs to be one of the following commands:
 
-*concert-this
-*spotify-this-song
-*movie-this
-*do-what-it-says
+* concert-this
+* spotify-this-song
+* movie-this
+* do-what-it-says
 
 The following arguments would be an artist or band for concert-this, song title for spotify-this-song, movie title for movie-this, and nothing for do-what-it-says.
 
@@ -29,10 +29,10 @@ Default: `" "`
 
 It needs to match one of the following:
 
-*concert-this
-*spotify-this-song
-*movie-this
-*do-what-it-says
+* concert-this
+* spotify-this-song
+* movie-this
+* do-what-it-says
 
 If it is not the text listed, then it will do nothing.
 
@@ -40,10 +40,10 @@ If it is not the text listed, then it will do nothing.
 Type: `string`  
 Default: `" "`
 
-*concert-this - needs artist or band as search term
-*spotify-this-song - needs song title as search term
-*movie-this - needs movie title as search term
-*do-what-it-says - no search term needed
+* concert-this - needs artist or band as search term
+* spotify-this-song - needs song title as search term
+* movie-this - needs movie title as search term
+* do-what-it-says - no search term needed
 
 ## Test scenario 1
 
@@ -52,7 +52,7 @@ search term = elton john
 
 Typed into command line --> "node liri.js concert-this elton john"
 
-![Image of scenario 1](./images/Scenario1.png)
+![Image of scenario 1](https://github.com/cvanglee/LIRIBot/blob/master/images/Scenario1.PNG)
 
 ## Test scenario 2
 
@@ -61,7 +61,7 @@ search term = gjafo
 
 Typed into command line --> "node liri.js concert-this gjafo"
 
-![Image of scenario 1](./images/Scenario2.png)
+![Image of scenario 1](https://github.com/cvanglee/LIRIBot/blob/master/images/Scenario2.PNG)
 
 ## Test scenario 3
 
@@ -70,7 +70,7 @@ search term = "blank"
 
 Typed into command line --> "node liri.js concert-this"
 
-![Image of scenario 1](./images/Scenario3.png)
+![Image of scenario 1](https://github.com/cvanglee/LIRIBot/blob/master/images/Scenario3.PNG)
 
 ## Test scenario 4
 
@@ -79,7 +79,7 @@ search term = blank space
 
 Typed into command line --> "node liri.js spotify-this-song blank space"
 
-![Image of scenario 1](./images/Scenario4.png)
+![Image of scenario 1](https://github.com/cvanglee/LIRIBot/blob/master/images/Scenario4.PNG)
 
 ## Test scenario 5
 
@@ -88,7 +88,7 @@ search term = afzsfv
 
 Typed into command line --> "node liri.js spotify-this-song afzsfv"
 
-![Image of scenario 1](./images/Scenario5.png)
+![Image of scenario 1](https://github.com/cvanglee/LIRIBot/blob/master/images/Scenario5.PNG)
 
 ## Test scenario 6
 
@@ -97,7 +97,7 @@ search term = "blank"
 
 Typed into command line --> "node liri.js spotify-this-song"
 
-![Image of scenario 1](./images/Scenario6.png)
+![Image of scenario 1](https://github.com/cvanglee/LIRIBot/blob/master/images/Scenario6.PNG)
 
 ## Test scenario 7
 
@@ -106,7 +106,7 @@ search term = trolls
 
 Typed into command line --> "node liri.js movie-this trolls"
 
-![Image of scenario 1](./images/Scenario7.png)
+![Image of scenario 1](https://github.com/cvanglee/LIRIBot/blob/master/images/Scenario7.PNG)
 
 ## Test scenario 8
 
@@ -115,7 +115,7 @@ search term = arufhd
 
 Typed into command line --> "node liri.js movie-this arufhd"
 
-![Image of scenario 1](./images/Scenario8.png)
+![Image of scenario 1](https://github.com/cvanglee/LIRIBot/blob/master/images/Scenario8.PNG)
 
 ## Test scenario 9
 
@@ -124,7 +124,7 @@ search term = "blank"
 
 Typed into command line --> "node liri.js movie-this"
 
-![Image of scenario 1](./images/Scenario9.png)
+![Image of scenario 1](https://github.com/cvanglee/LIRIBot/blob/master/images/Scenario9.PNG)
 
 ## Test scenario 10
 
@@ -133,7 +133,7 @@ search term = "blank"
 
 Typed into command line --> "node liri.js do-what-it-says"
 
-![Image of scenario 1](./images/Scenario10.png)
+![Image of scenario 1](https://github.com/cvanglee/LIRIBot/blob/master/images/Scenario10.PNG)
 
 ## Links
 
