@@ -14,10 +14,10 @@ Before starting development of this application, a Spotify API key needs to be o
 
 This application will take in arguments, of which the first argument after the file needs to be one of the following commands:
 
-*concert-this
-*spotify-this-song
-*movie-this
-*do-what-it-says
+* concert-this
+* spotify-this-song
+* movie-this
+* do-what-it-says
 
 The following arguments would be an artist or band for concert-this, song title for spotify-this-song, movie title for movie-this, and nothing for do-what-it-says.
 
@@ -40,10 +40,10 @@ If it is not the text listed, then it will do nothing.
 Type: `string`  
 Default: `" "`
 
-*concert-this - needs artist or band as search term
-*spotify-this-song - needs song title as search term
-*movie-this - needs movie title as search term
-*do-what-it-says - no search term needed
+* concert-this - needs artist or band as search term
+* spotify-this-song - needs song title as search term
+* movie-this - needs movie title as search term
+* do-what-it-says - no search term needed
 
 ## Test scenario 1
 
