@@ -70,7 +70,7 @@ search term = "blank"
 
 Typed into command line --> "node liri.js concert-this"
 
-![Image of scenario 1](https://github.com/cvanglee/LIRIBot/blob/master/images/Scenario3.PNGg)
+![Image of scenario 1](https://github.com/cvanglee/LIRIBot/blob/master/images/Scenario3.PNG)
 
 ## Test scenario 4
 
